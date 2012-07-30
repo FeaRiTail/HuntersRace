@@ -1,0 +1,63 @@
+### Safari Configuration File
+### 
+### GLOBAL SETTINGS
+global-settings:
+    enabled: true
+    allowed-commands: /start, /stop, /list, /info
+    update-notification: true
+
+
+###
+#
+# Some permission/config stuff
+#
+### enabled_worlds: Specifies, on which worlds the Safaris should work
+# e.g.: On Non-freebuild servers there usually is a "peaceful" world with no mobs spawning
+# and people building their homes. If such people would posess a Mob-spawner in their cellars,
+# they could easily cheat on Safaris...
+### admin_permission: this setting defines the permission which is necessary to set "safari.enabled_worlds".
+# may be used together with a permissions-plugin like PEX?    
+# the Plugin uses: if(player.hasPermission(config.get("safari.admin_permission"))) {} to
+# filter the command (or if the command comes from the servers console, which is always an indicator for admin ;) )
+
+huntersrace:
+  enabled_worlds:
+    - world1
+    - world2
+  admin_permission: some.super.permission
+
+
+huntersrace:
+  types_of_mobs_to_kill:
+    - CREEPER
+  addDrops:
+
+#####################
+# List of Mob-Types
+#####################    
+# BLAZE 
+# CAVE_SPIDER 
+# CHICKEN 
+# COW 
+# CREEPER 
+# ENDER_DRAGON 
+# ENDERMAN 
+# GHAST 
+# GIANT 
+# IRON_GOLEM 
+# MAGMA_CUBE 
+# MUSHROOM_COW 
+# OCELOT 
+# PIG 
+# PIG_ZOMBIE 
+# PLAYER 
+# SHEEP 
+# SILVERFISH 
+# SKELETON 
+# SLIME 
+# SNOWMAN 
+# SPIDER 
+# SQUID 
+# VILLAGER 
+# WOLF 
+# ZOMBIE    

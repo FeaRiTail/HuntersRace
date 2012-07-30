@@ -1,0 +1,25 @@
+name: HuntersRace
+main: de.tink.minecraft.plugin.huntersrace.HuntersRacePlugin
+version: 0.1
+commands:
+    huntersrace:
+        description: Base command for HuntersRace
+        usage: |
+            Use:
+            /huntersrace subscribe - Participate in Hunting-Races
+            /huntersrace unsubscribe - Cancel your enlistment
+    huntersrace.subscribe:
+        description: Participate in Hunting-Races
+    huntersrace.subscribe:
+        description: Cancel your enlistment
+permissions:
+    huntersrace.use:
+        description: Gives access to usage commands
+        default: true
+        children:
+            huntersrace.subscribe: true
+            huntersrace.unsubscribe: true
+    huntersrace.subscribe:
+        default: true
+    huntersrace.unsubscribe:
+        default: true
